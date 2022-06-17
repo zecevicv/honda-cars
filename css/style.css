@@ -83,6 +83,11 @@ body {
   font-family: 'metali', sans-serif !important;
 }
 
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 /* #Buttons & Links
 ================================================== */
 .btn {
