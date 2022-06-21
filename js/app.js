@@ -44,12 +44,14 @@ if (headerNav) {
 // Categories
 const headerCategories = document.querySelector('.header-categories .collapse-toggler');
 
-headerCategories.addEventListener('click', (e) => {
-  if (window.scrollY < 1) {
-    header.classList.toggle('header-white');
-  } 
-  body.classList.toggle('no-scroll');
-});
+if (headerCategories) {
+  headerCategories.addEventListener('click', (e) => {
+    if (window.scrollY < 1) {
+      header.classList.toggle('header-white');
+    } 
+    body.classList.toggle('no-scroll');
+  });
+}
 
 /* #Banner Slider
 ======================================================= */
