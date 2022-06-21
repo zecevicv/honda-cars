@@ -90,3 +90,119 @@ if (document.querySelector('.news .swiper')) {
     },
   });
 }
+
+/* #Car Color
+======================================================= */
+if (document.querySelector('.car-color .swiper')) {
+  var swiper = new Swiper(".car-color .thumbs", {
+    slidesPerView: 'auto',
+    watchSlidesProgress: true,
+  });
+
+  var swiper2 = new Swiper(".car-color .gallery", {
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+}
+
+/* #Car Color
+======================================================= */
+if (document.querySelector('.car-slider-1 .swiper')) {
+  var swiper = new Swiper(".car-slider-1 .thumbs", {
+    slidesPerView: 'auto',
+    watchSlidesProgress: true,
+  });
+
+  var swiper2 = new Swiper(".car-slider-1 .gallery", {
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+}
+
+/* #Car Gallery Slider
+======================================================= */
+if (document.querySelector('.car-gallery .swiper')) {
+  new Swiper(".car-gallery .swiper", {
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+      el: ".car-gallery .swiper-pagination",
+      type: "progressbar",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.28
+      },
+      1024: {
+        slidesPerView: 1.71
+      }
+    },
+    navigation: {
+      nextEl: '.car-gallery .next',
+      prevEl: '.car-gallery .prev',
+    },
+  });
+}
+
+/* #Car Slider 2 Slider
+======================================================= */
+if (document.querySelector('.car-slider-2 .swiper')) {
+  new Swiper(".car-slider-2 .swiper", {
+    pagination: {
+      el: ".car-slider-2 .swiper-pagination",
+      type: "progressbar",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.13
+      },
+      1024: {
+        slidesPerView: 2
+      }
+    },
+    navigation: {
+      nextEl: '.car-slider-2 .next',
+      prevEl: '.car-slider-2 .prev',
+    },
+  });
+}
+
+/* #Range Sliders
+  ======================================================= */
+if (document.querySelector('#rangeSlider1')) {
+  var rangeSLider = new rSlider({
+    target: '#rangeSlider1',
+    values: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    range: false,
+    tooltip: false,
+    scale: false,
+    labels: false,
+    set: [5]
+  });
+}
+
+if (document.querySelector('#rangeSlider2')) {
+  var rangeSLider = new rSlider({
+    target: '#rangeSlider2',
+    values: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    range: false,
+    tooltip: false,
+    scale: false,
+    labels: false,
+    set: [5]
+  });
+}
+
+if (document.querySelector('#rangeSlider3')) {
+  var rangeSLider = new rSlider({
+    target: '#rangeSlider3',
+    values: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    range: false,
+    tooltip: false,
+    scale: false,
+    labels: false,
+    set: [5]
+  });
+}
